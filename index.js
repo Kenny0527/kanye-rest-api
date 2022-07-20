@@ -14,7 +14,7 @@ app.listen(PORT, () => {
 app.use(cors());
 
 // <SERVERNAME>.<METHODNAME>(<PATHNAME>, <CALLBACK FUNCTION>)
-app.get("/kanye_quotes", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     const response = await axios.get(URL);
     res.send(response.data);
