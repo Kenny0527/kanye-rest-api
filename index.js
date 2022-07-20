@@ -6,7 +6,7 @@ import cors from "cors";
 const app = express();
 const URL = "https://api.kanye.rest";
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`server listening on port: ${PORT}`);
 });
